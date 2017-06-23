@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ValidLoginTest" parallel="none">
+    <test verbose="1" name="TestNG" annotations="JDK">
+        <parameter name="url" value="https://jdi-framework.github.io/tests/index.htm"/>
+        <classes>
+            <class name="org.protasov.ii.lesson3.tests.LoginTest">
+                <methods>
+                    <include name="invalidLoginTest"/>
+                    <include name="validLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
